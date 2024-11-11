@@ -1,7 +1,146 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | BenJGadd</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/main.css">
 </head>
+
 <body>
+    <nav>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-overlay"></label>
+        <label for="nav-toggle" class="menu-button" aria-label="Toggle navigation menu">
+            <i class="fas fa-bars fa-fw"></i>
+        </label>
+        <div class="title">
+            <img src="../images/logo.png" alt="BenJGadd Icon">
+            <a href="/">BenJGadd</a>
+            <p class="separator">/</p>
+            <a href="/">Portfolio</a>
+        </div>
+
+        <div class="links">
+            <a href="/"><i class="fas fa-home fa-fw"></i>Home</a>
+            <a href="/projects"><i class="fas fa-code fa-fw"></i>Projects</a>
+            <a href="/academic"><i class="fas fa-graduation-cap fa-fw"></i>Academic</a>
+            <a href="/resume"><i class="fas fa-file fa-fw"></i>Resume</a>
+            <a href="/contact" class="btn"><i class="fas fa-envelope fa-fw"></i>Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <h1>Computer Science Portfolio</h1>
+        <div class="main-grid">
+            <div class="left-grid">
+                <div class="card">
+                    <div class="profile">
+                        <img class="avatar" src="../images/avatar.jpg" width="150" height="150" alt="Profile picture">
+                        <div>
+                            <h2>Ben Gadd</h2>
+                            <p class="text-gray">My name is Ben Gadd. This is a first draft of my portfolio site. It
+                                will include all of my academic and personal projects and accomplishments. I plan to
+                                itterate and improve upon the design.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2 id="projects">My Favorite Projects</h2>
+                    <div class="card-grid">
+                        <div class="subcard">
+                            <h3><a href="https://github.com/BenJGadd/div-overhaul" target="_blank">Div Overhaul</a></h3>
+                            <p class="text-gray">This Chrome extension converts every element on every webpage to a div.
+                                It's a joke, but it's also a proof of concept for a Chrome extension.</p>
+                            <div class="tags">
+                                <span>JavaScript</span>
+                                <span>Chrome Extension</span>
+                            </div>
+                        </div>
+                        <div class="subcard">
+                            <h3>More Projects Coming Soon</h3>
+                            <p>Stay tuned for additional projects.</p>
+                            <div class="tags">
+                                <span>Future</span>
+                                <span>Development</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2 id="academic-projects">Featured Academic Projects</h2>
+                    <div class="card-grid">
+                        <div class="subcard">
+                            <h3><a href="https://cs2350bengadd.netlify.app/challenge" target="_blank">Web Design
+                                    Portfolio</a></h3>
+                            <p class="text-gray">This is a portfolio website to showcase the web design concepts I've
+                                learned in my CS 2350 Web Design class.</p>
+                            <div class="tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                            </div>
+                        </div>
+                        <div class="subcard">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="card">
+                    <h2>About Me</h2>
+                    <p class="text-gray">I am a junior at Weber State University studying Computer Science</p>
+                    <a href="https://www.weber.edu" target="_blank">
+                        <i class="fas fa-graduation-cap fa-fw"></i>
+                        Junior at WSU
+                    </a>
+                    <a href="https://www.google.com/maps?q=salt+lake+city+utah" target="_blank">
+                        <i class="fas fa-map-marker-alt fa-fw"></i>
+                        Salt Lake City, UT
+                    </a>
+                    <a href="mailto:ben@benjgadd">
+                        <i class="fas fa-envelope fa-fw"></i>
+                        ben@benjgadd.com
+                    </a>
+                </div>
+                <div class="card">
+                    <h2>Links</h2>
+                    <button class="link-button">
+                        <a href="https://github.com/benjgadd" target="_blank">
+                            <i class="fab fa-github fa-fw"></i>
+                            GitHub Profile
+                        </a>
+                    </button>
+                    <button class="link-button">
+                        <a href="https://linkedin.com/in/benjgadd" target="_blank">
+                            <i class="fab fa-linkedin fa-fw"></i>
+                            LinkedIn Profile
+                        </a>
+                    </button>
+                    <button class="link-button">
+                        <a href="/files/resume.pdf">
+                            <i class="fas fa-file-alt fa-fw"></i>
+                            Download Resume
+                        </a>
+                    </button>
+                </div>
+
+                <div class="card">
+                    <h2 id="contact">Get in Touch</h2>
+                    <p class="text-gray">Questions or comments? Feel free to reach out!</p>
+                    <a href="/contact.html" class="btn">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>
