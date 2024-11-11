@@ -42,3 +42,30 @@ h3{font-size:1.25rem}
 .card-grid{grid-template-columns:1fr}
 .left-grid :last-child{margin-bottom:0}
 }
+
+/* Update existing text sizes */
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.25rem; }
+p { font-size: 1rem; }
+
+/* Add mobile-specific adjustments */
+@media (max-width: 768px) {
+    h1 { font-size: 1.75rem; }
+    h2 { font-size: 1.25rem; }
+    h3 { font-size: 1.125rem; }
+    p { font-size: 0.9375rem; }
+    
+    .tags span { 
+        font-size: 0.75rem; 
+        padding: 0.25rem 0.5rem;
+    }
+    
+    .card button {
+        font-size: 0.9375rem;
+    }
+    
+    .subcard p {
+        font-size: 0.9375rem;
+    }
+}
